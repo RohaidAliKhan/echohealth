@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
   initSvgAnimations();
   initBtnAnimations();
   initContentRevealScroll();
+  initHeroAnimation();
 });
 
 function updateHeaderIcon(activeTabId) {
@@ -183,7 +184,6 @@ function initBtnAnimations() {
   });
 }
 
-
 function initContentRevealScroll(){
   const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -312,4 +312,57 @@ function initContentRevealScroll(){
   });
 
   return () => ctx.revert();
+}
+
+function initHeroAnimation(options = {}) {
+  const {
+    heroText    = ".hero-text-col",
+    heroImage   = ".hero-image-col",
+    cta         = ".btn-echo",
+    ctaChars    = ".btn-echo .btn-char",
+    ctaIcon     = ".btn-echo svg",
+    delay       = 0,
+    onComplete  = null,
+  } = options;
+
+  // Set initial hidden states
+  gsap.set([heroText, heroImage, cta], { opacity: 0 });
+  gsap.set(heroText,  { y: 30 });
+  gsap.set(heroImage, { y: 20 });
+  gsap.set(cta,       { opacity: 1, y: 0 });
+
+  // Hide individual CTA children
+  gsap.set(ctaChars, { opacity: 0, y: 8 });
+  gsap.set(ctaIcon,  { opacity: 0, x: -6, rotate: -15 });
+
+  const tl = gsap.timeline({
+    delay,
+    defaults: { ease: "power2.out" },
+    onComplete,
+  });
+
+  tl
+    .to(heroText,  { opacity: 1, y: 0, duration: 0.8 })
+    .to(heroImage, { opacity: 1, y: 0, duration: 0.8 }, "<")
+
+    // Step 3: Button border fades in
+    .to(cta, { opacity: 1, duration: 0.3 }, "+=0.2")
+
+    // Step 4: Characters stagger in
+    .to(ctaChars, {
+      opacity: 1,
+      y: 0,
+      duration: 0.4,
+      stagger: 0.03,
+    }, "-=0.1")
+
+    .to(ctaIcon, {
+      opacity: 1,
+      x: 0,
+      rotate: 0,
+      duration: 0.4,
+      ease: "back.out(1.7)",
+    }, "-=0.2");
+
+  return tl;
 }

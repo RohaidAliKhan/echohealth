@@ -837,6 +837,7 @@ img, video { max-width: 100%; display: block; }
 .contact-form-wrapper {
     background: white;
     border-radius: 1.5rem;
+    padding: 4.68rem 4rem;
 }
 
 .sticky-footer-left {
@@ -854,7 +855,7 @@ img, video { max-width: 100%; display: block; }
    RESPONSIVE MEDIA QUERIES (px)
    ============================================ */
 
-@media (max-width: 1024px) {
+@media (max-width: 1140px) {
   .hero-title {
     font-size: 2rem;
     line-height: 1;
@@ -1032,6 +1033,13 @@ p {
 }
 .resources-card-content {
     padding: 1.5rem;
+}
+.sticky-footer-left {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+.contact-form-wrapper {
+  padding: 2.5rem 2rem;
 }
 }
 
