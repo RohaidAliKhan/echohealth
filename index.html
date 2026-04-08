@@ -18,7 +18,7 @@
        HEADER — Transparent, Logo only
        ============================== -->
   <header class="site-header">
-    <a href="index.html">
+    <a href="index.html" data-reveal-group>
     <img
       src="assets/images/main-logo-echo.svg"
       alt="Echo — Payments Simplified"
@@ -34,7 +34,7 @@
   <section class="hero">
 
     <!-- Background SVG grid lines (right side) -->
-    <svg class="hero-bg-svg" viewBox="0 0 887 896" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg class="hero-bg-svg" viewBox="0 0 887 896" fill="none" xmlns="http://www.w3.org/2000/svg" data-svg-animation>
         <path d="M518.256 95.6885L448.361 95.6874C437.541 95.6872 428.77 104.455 428.77 115.271C428.77 126.087 437.542 134.855 448.362 134.855L518.257 134.856C529.077 134.856 537.848 126.089 537.848 115.273C537.848 104.457 529.076 95.6887 518.256 95.6885Z" fill="url(#paint0_linear_33_102)"/>
         <path d="M804.797 95.694L585.499 95.6904C574.679 95.6902 565.908 104.458 565.908 115.274C565.908 126.09 574.68 134.858 585.5 134.858L804.798 134.862C815.618 134.862 824.389 126.094 824.389 115.278C824.389 104.462 815.617 95.6941 804.797 95.694Z" fill="url(#paint1_linear_33_102)"/>
         <path d="M366.455 130.172C374.684 138.401 388.026 138.401 396.254 130.172C404.483 121.943 404.483 108.602 396.254 100.373C388.025 92.144 374.683 92.1438 366.455 100.372C358.226 108.601 358.226 121.943 366.455 130.172Z" fill="url(#paint2_linear_33_102)"/>
@@ -214,11 +214,11 @@
     <div class="hero-circle hero-circle--bottom" aria-hidden="true"></div>
 
     <!-- Main content -->
-    <div class="container-fluid px-4 px-md-5 hero-inner">
+    <div class="container-fluid px-md-5 hero-inner">
       <div class="row align-items-center">
 
         <!-- LEFT: Text -->
-        <div class="col-12 col-md-6 hero-text-col">
+        <div class="col-12 col-md-6 hero-text-col" data-reveal-group data-stagger="300">
           <h1 class="hero-title">
             Content Hub<br>Title Goes Here
           </h1>
@@ -232,7 +232,7 @@
                 <rect x="76" width="96" height="12" rx="6" fill="#78CCD9"/>
             </svg>
           </div>
-          <a class="btn-echo" href="intractive.html">
+          <a class="btn-echo" href="intractive.html" data-btn-animation>
             Click to continue
             <svg width="37" height="51" viewBox="0 0 37 51" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_33_115)">
@@ -256,7 +256,7 @@
         </div>
 
         <!-- RIGHT: Image placeholder -->
-        <div class="col-12 col-md-6 hero-image-col">
+        <div class="col-12 col-md-6 hero-image-col" data-reveal-group>
           <!--
             Replace this img tag with your actual image.
             The image will be displayed in grayscale as per the design.
@@ -275,5 +275,15 @@
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <!-- LOCOMOTIVE -->
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll/bundled/locomotive-scroll.min.js"></script>
+  <!-- Custom JS -->
+  <script src="assets/js/custom.js"></script>
 </body>
 </html>

@@ -20,7 +20,7 @@
        HEADER — Transparent, Logo only
        ============================== -->
   <header class="site-header">
-    <a href="index.html">
+    <a href="index.html" data-reveal-group>
     <img
       src="assets/images/main-logo-echo.svg"
       alt="Echo — Payments Simplified"
@@ -35,7 +35,7 @@
        ============================== -->
     <section class="content-hub-section">
         <!-- Background SVG grid lines (right side) -->
-        <svg class="hero-bg-svg" viewBox="0 0 887 896" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="hero-bg-svg" viewBox="0 0 887 896" fill="none" xmlns="http://www.w3.org/2000/svg" data-svg-animation>
             <path d="M518.256 95.6885L448.361 95.6874C437.541 95.6872 428.77 104.455 428.77 115.271C428.77 126.087 437.542 134.855 448.362 134.855L518.257 134.856C529.077 134.856 537.848 126.089 537.848 115.273C537.848 104.457 529.076 95.6887 518.256 95.6885Z" fill="url(#paint0_linear_33_102)"/>
             <path d="M804.797 95.694L585.499 95.6904C574.679 95.6902 565.908 104.458 565.908 115.274C565.908 126.09 574.68 134.858 585.5 134.858L804.798 134.862C815.618 134.862 824.389 126.094 824.389 115.278C824.389 104.462 815.617 95.6941 804.797 95.694Z" fill="url(#paint1_linear_33_102)"/>
             <path d="M366.455 130.172C374.684 138.401 388.026 138.401 396.254 130.172C404.483 121.943 404.483 108.602 396.254 100.373C388.025 92.144 374.683 92.1438 366.455 100.372C358.226 108.601 358.226 121.943 366.455 130.172Z" fill="url(#paint2_linear_33_102)"/>
@@ -214,7 +214,7 @@
         <div class="hero-circle hero-circle--center" aria-hidden="true"></div>
         <div class="hero-circle hero-circle--bottom-left" aria-hidden="true"></div>
 
-        <svg class="hero-bg-svg-bottom" viewBox="0 0 902 790" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="hero-bg-svg-bottom" viewBox="0 0 902 790" fill="none" xmlns="http://www.w3.org/2000/svg" data-svg-animation>
             <path d="M191.256 788.35L121.361 788.351C110.541 788.351 101.77 779.583 101.77 768.767C101.77 757.951 110.542 749.183 121.362 749.183L191.257 749.182C202.077 749.182 210.848 757.95 210.848 768.766C210.848 779.581 202.076 788.35 191.256 788.35Z" fill="#2154BF" fill-opacity="0.5"/>
             <path d="M477.797 788.344L258.499 788.348C247.679 788.348 238.908 779.58 238.908 768.764C238.908 757.948 247.68 749.18 258.5 749.18L477.798 749.177C488.618 749.176 497.389 757.944 497.389 768.76C497.389 779.576 488.617 788.344 477.797 788.344Z" fill="#2154BF" fill-opacity="0.5"/>
             <path d="M39.4552 753.867C47.6841 745.638 61.0256 745.638 69.2543 753.866C77.483 762.095 77.4828 775.436 69.2538 783.665C61.0249 791.894 47.6834 791.894 39.4547 783.666C31.2261 775.437 31.2263 762.096 39.4552 753.867Z" fill="#2154BF" fill-opacity="0.5"/>
@@ -252,7 +252,7 @@
         </svg>
 
         <div class="container-fluid px-4 px-md-5">
-            <div class="content-hub-header">
+            <div class="content-hub-header" data-reveal-group data-stagger="200">
             <h1 class="hero-title">Content Hub<br>Title Goes Here</h1>
             <div class="vetor-icon top">
                 <svg viewBox="0 0 53 54" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -432,9 +432,9 @@
                 </div>
             </div>
             </div>
-            <div class="row g-4 position-relative">
+            <div class="row g-4 position-relative" data-reveal-group>
                 <!-- LEFT: topic nav -->
-                <div class="col-md-4 col-lg-3 topic-column">
+                <div class="col-md-4 col-lg-3 topic-column" data-reveal-group data-stagger="300">
                     <h3 class="select-topic-label">Select a topic</h3>
             
                     <!-- Mobile dropdown -->
@@ -476,7 +476,7 @@
                     </ul>
                 </div>
                 <!-- RIGHT: tab panels -->
-                <div class="col-md-8 col-lg-9 tab-column">
+                <div class="col-md-8 col-lg-9 tab-column" data-reveal-group data-stagger="300">
                     <div class="tab-content" id="topicTabContent">
             
                     <!-- EFFICIENCY -->
@@ -670,44 +670,44 @@
                                     <rect x="76" width="96" height="12" rx="6" fill="#78CCD9"/>
                                 </svg>
                             </div>
-                            <div class="accordion faq-accordion" id="faq-efficiency">
+                            <div class="accordion faq-accordion" id="faq-provider">
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq-e-1">Where are healthcare payment costs coming from?</button>
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq-p-1">Where are healthcare payment costs coming from?</button>
                                 </h2>
-                                <div id="faq-e-1" class="accordion-collapse collapse show" data-bs-parent="#faq-efficiency">
+                                <div id="faq-p-1" class="accordion-collapse collapse show" data-bs-parent="#faq-provider">
                                 <div class="accordion-body">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait</div>
                                 </div>
                             </div>
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-e-2">How can automation reduce administrative burden?</button>
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-p-2">How can automation reduce administrative burden?</button>
                                 </h2>
-                                <div id="faq-e-2" class="accordion-collapse collapse" data-bs-parent="#faq-efficiency">
+                                <div id="faq-p-2" class="accordion-collapse collapse" data-bs-parent="#faq-provider">
                                 <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</div>
                                 </div>
                             </div>
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-e-3">What payment workflows can be streamlined?</button>
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-p-3">What payment workflows can be streamlined?</button>
                                 </h2>
-                                <div id="faq-e-3" class="accordion-collapse collapse" data-bs-parent="#faq-efficiency">
+                                <div id="faq-p-3" class="accordion-collapse collapse" data-bs-parent="#faq-provider">
                                 <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</div>
                                 </div>
                             </div>
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-e-4">How does Echo help with claim processing costs?</button>
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-p-4">How does Echo help with claim processing costs?</button>
                                 </h2>
-                                <div id="faq-e-4" class="accordion-collapse collapse" data-bs-parent="#faq-efficiency">
+                                <div id="faq-p-4" class="accordion-collapse collapse" data-bs-parent="#faq-provider">
                                 <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</div>
                                 </div>
                             </div>
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-e-5">What ROI can health plans expect?</button>
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-p-5">What ROI can health plans expect?</button>
                                 </h2>
-                                <div id="faq-e-5" class="accordion-collapse collapse" data-bs-parent="#faq-efficiency">
+                                <div id="faq-p-5" class="accordion-collapse collapse" data-bs-parent="#faq-provider">
                                 <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</div>
                                 </div>
                             </div>
@@ -847,44 +847,44 @@
                                     <rect x="76" width="96" height="12" rx="6" fill="#78CCD9"/>
                                 </svg>
                             </div>
-                            <div class="accordion faq-accordion" id="faq-efficiency">
+                            <div class="accordion faq-accordion" id="faq-member">
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq-e-1">Where are healthcare payment costs coming from?</button>
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq-m-1">Where are healthcare payment costs coming from?</button>
                                 </h2>
-                                <div id="faq-e-1" class="accordion-collapse collapse show" data-bs-parent="#faq-efficiency">
+                                <div id="faq-m-1" class="accordion-collapse collapse show" data-bs-parent="#faq-member">
                                 <div class="accordion-body">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait</div>
                                 </div>
                             </div>
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-e-2">How can automation reduce administrative burden?</button>
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-m-2">How can automation reduce administrative burden?</button>
                                 </h2>
-                                <div id="faq-e-2" class="accordion-collapse collapse" data-bs-parent="#faq-efficiency">
+                                <div id="faq-m-2" class="accordion-collapse collapse" data-bs-parent="#faq-member">
                                 <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</div>
                                 </div>
                             </div>
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-e-3">What payment workflows can be streamlined?</button>
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-m-3">What payment workflows can be streamlined?</button>
                                 </h2>
-                                <div id="faq-e-3" class="accordion-collapse collapse" data-bs-parent="#faq-efficiency">
+                                <div id="faq-m-3" class="accordion-collapse collapse" data-bs-parent="#faq-member">
                                 <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</div>
                                 </div>
                             </div>
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-e-4">How does Echo help with claim processing costs?</button>
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-m-4">How does Echo help with claim processing costs?</button>
                                 </h2>
-                                <div id="faq-e-4" class="accordion-collapse collapse" data-bs-parent="#faq-efficiency">
+                                <div id="faq-m-4" class="accordion-collapse collapse" data-bs-parent="#faq-member">
                                 <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</div>
                                 </div>
                             </div>
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-e-5">What ROI can health plans expect?</button>
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-m-5">What ROI can health plans expect?</button>
                                 </h2>
-                                <div id="faq-e-5" class="accordion-collapse collapse" data-bs-parent="#faq-efficiency">
+                                <div id="faq-m-5" class="accordion-collapse collapse" data-bs-parent="#faq-member">
                                 <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</div>
                                 </div>
                             </div>
@@ -1024,44 +1024,44 @@
                                     <rect x="76" width="96" height="12" rx="6" fill="#78CCD9"/>
                                 </svg>
                             </div>
-                            <div class="accordion faq-accordion" id="faq-efficiency">
+                            <div class="accordion faq-accordion" id="faq-payment">
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq-e-1">Where are healthcare payment costs coming from?</button>
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq-pay-1">Where are healthcare payment costs coming from?</button>
                                 </h2>
-                                <div id="faq-e-1" class="accordion-collapse collapse show" data-bs-parent="#faq-efficiency">
+                                <div id="faq-pay-1" class="accordion-collapse collapse show" data-bs-parent="#faq-payment">
                                 <div class="accordion-body">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait</div>
                                 </div>
                             </div>
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-e-2">How can automation reduce administrative burden?</button>
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-pay-2">How can automation reduce administrative burden?</button>
                                 </h2>
-                                <div id="faq-e-2" class="accordion-collapse collapse" data-bs-parent="#faq-efficiency">
+                                <div id="faq-pay-2" class="accordion-collapse collapse" data-bs-parent="#faq-payment">
                                 <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</div>
                                 </div>
                             </div>
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-e-3">What payment workflows can be streamlined?</button>
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-pay-3">What payment workflows can be streamlined?</button>
                                 </h2>
-                                <div id="faq-e-3" class="accordion-collapse collapse" data-bs-parent="#faq-efficiency">
+                                <div id="faq-pay-3" class="accordion-collapse collapse" data-bs-parent="#faq-payment">
                                 <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</div>
                                 </div>
                             </div>
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-e-4">How does Echo help with claim processing costs?</button>
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-pay-4">How does Echo help with claim processing costs?</button>
                                 </h2>
-                                <div id="faq-e-4" class="accordion-collapse collapse" data-bs-parent="#faq-efficiency">
+                                <div id="faq-pay-4" class="accordion-collapse collapse" data-bs-parent="#faq-payment">
                                 <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</div>
                                 </div>
                             </div>
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-e-5">What ROI can health plans expect?</button>
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-pay-5">What ROI can health plans expect?</button>
                                 </h2>
-                                <div id="faq-e-5" class="accordion-collapse collapse" data-bs-parent="#faq-efficiency">
+                                <div id="faq-pay-5" class="accordion-collapse collapse" data-bs-parent="#faq-payment">
                                 <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</div>
                                 </div>
                             </div>
@@ -1201,44 +1201,44 @@
                                     <rect x="76" width="96" height="12" rx="6" fill="#78CCD9"/>
                                 </svg>
                             </div>
-                            <div class="accordion faq-accordion" id="faq-efficiency">
+                            <div class="accordion faq-accordion" id="faq-tech">
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq-e-1">Where are healthcare payment costs coming from?</button>
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq-t-1">Where are healthcare payment costs coming from?</button>
                                 </h2>
-                                <div id="faq-e-1" class="accordion-collapse collapse show" data-bs-parent="#faq-efficiency">
+                                <div id="faq-t-1" class="accordion-collapse collapse show" data-bs-parent="#faq-tech">
                                 <div class="accordion-body">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait</div>
                                 </div>
                             </div>
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-e-2">How can automation reduce administrative burden?</button>
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-t-2">How can automation reduce administrative burden?</button>
                                 </h2>
-                                <div id="faq-e-2" class="accordion-collapse collapse" data-bs-parent="#faq-efficiency">
+                                <div id="faq-t-2" class="accordion-collapse collapse" data-bs-parent="#faq-tech">
                                 <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</div>
                                 </div>
                             </div>
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-e-3">What payment workflows can be streamlined?</button>
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-t-3">What payment workflows can be streamlined?</button>
                                 </h2>
-                                <div id="faq-e-3" class="accordion-collapse collapse" data-bs-parent="#faq-efficiency">
+                                <div id="faq-t-3" class="accordion-collapse collapse" data-bs-parent="#faq-tech">
                                 <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</div>
                                 </div>
                             </div>
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-e-4">How does Echo help with claim processing costs?</button>
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-t-4">How does Echo help with claim processing costs?</button>
                                 </h2>
-                                <div id="faq-e-4" class="accordion-collapse collapse" data-bs-parent="#faq-efficiency">
+                                <div id="faq-t-4" class="accordion-collapse collapse" data-bs-parent="#faq-tech">
                                 <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</div>
                                 </div>
                             </div>
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-e-5">What ROI can health plans expect?</button>
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-t-5">What ROI can health plans expect?</button>
                                 </h2>
-                                <div id="faq-e-5" class="accordion-collapse collapse" data-bs-parent="#faq-efficiency">
+                                <div id="faq-t-5" class="accordion-collapse collapse" data-bs-parent="#faq-tech">
                                 <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</div>
                                 </div>
                             </div>
@@ -1396,6 +1396,12 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <!-- LOCOMOTIVE -->
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll/bundled/locomotive-scroll.min.js"></script>
   <!-- Custom JS -->
   <script src="assets/js/custom.js"></script>
 </body>

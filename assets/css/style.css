@@ -244,6 +244,13 @@ img, video { max-width: 100%; display: block; }
   border-radius: var(--radius-full);
   background: var(--gradient-circle);
   pointer-events: none;
+  animation: hero-pulse 8s ease-in-out infinite;
+}
+
+@keyframes hero-pulse {
+  0%   { transform: scale(1);    opacity: 1;    }
+  50%  { transform: scale(1.18); opacity: 0.75; }
+  100% { transform: scale(1);    opacity: 1;    }
 }
 
 .hero-circle--top {
@@ -284,7 +291,7 @@ img, video { max-width: 100%; display: block; }
 }
 
 .hero-text-col {
-  padding-top: var(--space-12);
+  padding-top: 8rem;
   padding-bottom: var(--space-12);
 }
 
@@ -308,11 +315,11 @@ img, video { max-width: 100%; display: block; }
 }
 
 .hero-image-col img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  object-position: center 60%;
-  display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: bottom;
+    display: block;
 }
 
 .hero-image-col {
@@ -358,6 +365,16 @@ img, video { max-width: 100%; display: block; }
 .btn-echo-solid:hover {
   opacity: 0.88;
   transform: translateY(-0.0625rem);
+}
+
+.btn-text-wrapper {
+  display: inline-flex;
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+.btn-char {
+  display: inline-block;
 }
 
 /* ============================================
@@ -414,17 +431,17 @@ img, video { max-width: 100%; display: block; }
     padding: 0.65rem;
     position: absolute;
     top: 0;
-    right: 35%;
+    right: 37%;
 }
 
 .vetor-icon.bottom {
-    right: 24%;
-    bottom: 0rem;
+    right: 28%;
+    bottom: 1rem;
     top: unset;
 }
 
 .vetor-icon.top {
-    top: -12rem;
+    top: -10rem;
 }
 
 .tab-icon-wrapper {
@@ -471,14 +488,14 @@ img, video { max-width: 100%; display: block; }
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  margin-right: 3.5rem;
+  margin-right: 3rem;
 }
 
 .tab-topic-nav .nav-link {
     background: rgba(255, 255, 255, 0.08);
     border: 1px solid rgba(255, 255, 255, 0.12);
     border-radius: 0.5rem;
-    padding: 1.125rem 3.1rem;
+    padding: 1.125rem 2.5rem;
     transition: all 0.2s;
     cursor: pointer;
     width: 100%;
@@ -680,8 +697,16 @@ img, video { max-width: 100%; display: block; }
     width: 100% !important;
     padding-left: 16px;
     display: flex;
-    padding-block: 4rem 2rem;
     position: relative;
+    height: 0.8rem !important;
+    border-radius: 2rem !important;
+    margin-block: 3rem 3rem;
+    background: #F2F2F2;
+}
+
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+    background: #78CCD9;
+    border-radius: 2rem;
 }
 
 .swiper-pagination-bullet {
@@ -787,6 +812,9 @@ img, video { max-width: 100%; display: block; }
     padding-inline: 0;
     min-height: 100vh;
     width: 60%;
+    display: flex;
+    align-items: end;
+    justify-content: end;
 }
 
 /* ============================================
@@ -828,9 +856,6 @@ img, video { max-width: 100%; display: block; }
 }
 .site-header .logo-img {
     height: 3.8rem;
-}
-.hero-image-col img {
-    object-position: center 80%;
 }
 .hero-bg-svg {
     width: 60%;
@@ -948,33 +973,34 @@ p {
   }
 
   .hero-text-col {
-    padding-top: var(--space-8);
+    padding-top: 6rem;
     padding-bottom: var(--space-4);
     order: 1;
+    padding-inline: 1.5rem;
   }
 
   .hero-image-col {
-    order: 2;
-    position: relative;
-    min-height: 100%;
-    width: 100%;
+      order: 2;
+      position: relative;
+      min-height: 42vh;
+      width: 100%;
   }
 
   .hero-desc {
     max-width: 100%;
   }
   .hero-image-col img {
-    max-height: 55vh;
+    max-height: 75vh;
     width: 100%;
     object-fit: cover;
 }
     .tab-column {
         padding: 1.5rem;
     }
+    a.btn-echo {
+    font-size: 1rem;
+}
 }
 
 @media (max-width: 480px) {
-  :root {
-    --font-size-5xl: 1.75rem;
-  }
 }
